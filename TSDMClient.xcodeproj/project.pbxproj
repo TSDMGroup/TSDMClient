@@ -13,7 +13,36 @@
 		2D3A253C1BCB53D90017FE4A /* TSDMClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A253A1BCB53D90017FE4A /* TSDMClient.xcdatamodeld */; };
 		2D3A253E1BCB53D90017FE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A253D1BCB53D90017FE4A /* Assets.xcassets */; };
 		2D3A25411BCB53D90017FE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A253F1BCB53D90017FE4A /* LaunchScreen.storyboard */; };
+		2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254A1BCB56560017FE4A /* ICSDrawerController.m */; settings = {ASSET_TAGS = (); }; };
+		2D3A254E1BCB56560017FE4A /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254C1BCB56560017FE4A /* ICSDropShadowView.m */; settings = {ASSET_TAGS = (); }; };
+		2D3A25501BCB57AE0017FE4A /* KRMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2D3A25531BCB57CF0017FE4A /* KRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2DB6ABB31BD5DAB500BFDBCB /* TSDMClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABB21BD5DAB500BFDBCB /* TSDMClientTests.swift */; };
+		2DB6ABC11BD5DABF00BFDBCB /* TSDMClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABC01BD5DABF00BFDBCB /* TSDMClientUITests.swift */; };
+		2DB6ABC91BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABC81BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift */; settings = {ASSET_TAGS = (); }; };
+		2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE71BD63D4A00BFDBCB /* KRInterfaceManager.swift */; settings = {ASSET_TAGS = (); }; };
+		2DB6ABEA1BD6445100BFDBCB /* KRNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE91BD6445100BFDBCB /* KRNetworkDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		2DB6ABED1BD64A8700BFDBCB /* KRAreaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */; settings = {ASSET_TAGS = (); }; };
+		2DF78B931BCB91A8006A5A4B /* UserDefault.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */; settings = {ASSET_TAGS = (); }; };
+		2DF78B951BCBBE86006A5A4B /* AppMenuIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DB6ABB51BD5DAB500BFDBCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3A25281BCB53D90017FE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D3A252F1BCB53D90017FE4A;
+			remoteInfo = TSDMClient;
+		};
+		2DB6ABC31BD5DABF00BFDBCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3A25281BCB53D90017FE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D3A252F1BCB53D90017FE4A;
+			remoteInfo = TSDMClient;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2D3A25301BCB53D90017FE4A /* TSDMClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSDMClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,43 @@
 		2D3A253D1BCB53D90017FE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3A25401BCB53D90017FE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3A25421BCB53D90017FE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3A25491BCB56560017FE4A /* ICSDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDrawerController.h; sourceTree = "<group>"; };
+		2D3A254A1BCB56560017FE4A /* ICSDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDrawerController.m; sourceTree = "<group>"; };
+		2D3A254B1BCB56560017FE4A /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		2D3A254C1BCB56560017FE4A /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+		2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRMenuViewController.swift; sourceTree = "<group>"; };
+		2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHomeViewController.swift; sourceTree = "<group>"; };
+		2D3A25671BCB6DF40017FE4A /* TSDMClient-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSDMClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DB6ABB01BD5DAB500BFDBCB /* TSDMClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSDMClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB6ABB21BD5DAB500BFDBCB /* TSDMClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSDMClientTests.swift; sourceTree = "<group>"; };
+		2DB6ABB41BD5DAB500BFDBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB6ABBE1BD5DABF00BFDBCB /* TSDMClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSDMClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB6ABC01BD5DABF00BFDBCB /* TSDMClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSDMClientUITests.swift; sourceTree = "<group>"; };
+		2DB6ABC21BD5DABF00BFDBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DB6ABC81BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRNetworkRequesManagert.swift; sourceTree = "<group>"; };
+		2DB6ABE71BD63D4A00BFDBCB /* KRInterfaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRInterfaceManager.swift; sourceTree = "<group>"; };
+		2DB6ABE91BD6445100BFDBCB /* KRNetworkDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRNetworkDataManager.swift; sourceTree = "<group>"; };
+		2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRAreaListView.swift; sourceTree = "<group>"; };
+		2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserDefault.xcassets; sourceTree = "<group>"; };
+		2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppMenuIcon.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D3A252D1BCB53D90017FE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABAD1BD5DAB500BFDBCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABBB1BD5DABF00BFDBCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				2D3A25321BCB53D90017FE4A /* TSDMClient */,
+				2DB6ABB11BD5DAB500BFDBCB /* TSDMClientTests */,
+				2DB6ABBF1BD5DABF00BFDBCB /* TSDMClientUITests */,
 				2D3A25311BCB53D90017FE4A /* Products */,
+				2D3A25641BCB6D760017FE4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				2D3A25301BCB53D90017FE4A /* TSDMClient.app */,
+				2DB6ABB01BD5DAB500BFDBCB /* TSDMClientTests.xctest */,
+				2DB6ABBE1BD5DABF00BFDBCB /* TSDMClientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +125,83 @@
 			children = (
 				2D3A25331BCB53D90017FE4A /* AppDelegate.swift */,
 				2D3A25351BCB53D90017FE4A /* ViewController.swift */,
+				2DB6ABEB1BD644E900BFDBCB /* NwetworkManager */,
+				2D3A25651BCB6DAC0017FE4A /* Hone */,
 				2D3A25371BCB53D90017FE4A /* Main.storyboard */,
+				2D3A25631BCB6D0C0017FE4A /* Classes Library */,
 				2D3A253D1BCB53D90017FE4A /* Assets.xcassets */,
+				2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */,
+				2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */,
 				2D3A253F1BCB53D90017FE4A /* LaunchScreen.storyboard */,
 				2D3A25421BCB53D90017FE4A /* Info.plist */,
 				2D3A253A1BCB53D90017FE4A /* TSDMClient.xcdatamodeld */,
+				2D3A25671BCB6DF40017FE4A /* TSDMClient-Bridging-Header.h */,
 			);
 			path = TSDMClient;
+			sourceTree = "<group>";
+		};
+		2D3A25481BCB56560017FE4A /* ICSDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				2D3A25491BCB56560017FE4A /* ICSDrawerController.h */,
+				2D3A254A1BCB56560017FE4A /* ICSDrawerController.m */,
+				2D3A254B1BCB56560017FE4A /* ICSDropShadowView.h */,
+				2D3A254C1BCB56560017FE4A /* ICSDropShadowView.m */,
+			);
+			path = ICSDrawerController;
+			sourceTree = "<group>";
+		};
+		2D3A25631BCB6D0C0017FE4A /* Classes Library */ = {
+			isa = PBXGroup;
+			children = (
+				2D3A25481BCB56560017FE4A /* ICSDrawerController */,
+			);
+			name = "Classes Library";
+			sourceTree = "<group>";
+		};
+		2D3A25641BCB6D760017FE4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D3A25651BCB6DAC0017FE4A /* Hone */ = {
+			isa = PBXGroup;
+			children = (
+				2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */,
+				2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */,
+				2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */,
+			);
+			name = Hone;
+			sourceTree = "<group>";
+		};
+		2DB6ABB11BD5DAB500BFDBCB /* TSDMClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DB6ABB21BD5DAB500BFDBCB /* TSDMClientTests.swift */,
+				2DB6ABB41BD5DAB500BFDBCB /* Info.plist */,
+			);
+			path = TSDMClientTests;
+			sourceTree = "<group>";
+		};
+		2DB6ABBF1BD5DABF00BFDBCB /* TSDMClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DB6ABC01BD5DABF00BFDBCB /* TSDMClientUITests.swift */,
+				2DB6ABC21BD5DABF00BFDBCB /* Info.plist */,
+			);
+			path = TSDMClientUITests;
+			sourceTree = "<group>";
+		};
+		2DB6ABEB1BD644E900BFDBCB /* NwetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2DB6ABE91BD6445100BFDBCB /* KRNetworkDataManager.swift */,
+				2DB6ABC81BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift */,
+				2DB6ABE71BD63D4A00BFDBCB /* KRInterfaceManager.swift */,
+			);
+			name = NwetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +224,42 @@
 			productReference = 2D3A25301BCB53D90017FE4A /* TSDMClient.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2DB6ABAF1BD5DAB500BFDBCB /* TSDMClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB6ABB91BD5DAB500BFDBCB /* Build configuration list for PBXNativeTarget "TSDMClientTests" */;
+			buildPhases = (
+				2DB6ABAC1BD5DAB500BFDBCB /* Sources */,
+				2DB6ABAD1BD5DAB500BFDBCB /* Frameworks */,
+				2DB6ABAE1BD5DAB500BFDBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DB6ABB61BD5DAB500BFDBCB /* PBXTargetDependency */,
+			);
+			name = TSDMClientTests;
+			productName = TSDMClientTests;
+			productReference = 2DB6ABB01BD5DAB500BFDBCB /* TSDMClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DB6ABBD1BD5DABF00BFDBCB /* TSDMClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DB6ABC51BD5DABF00BFDBCB /* Build configuration list for PBXNativeTarget "TSDMClientUITests" */;
+			buildPhases = (
+				2DB6ABBA1BD5DABF00BFDBCB /* Sources */,
+				2DB6ABBB1BD5DABF00BFDBCB /* Frameworks */,
+				2DB6ABBC1BD5DABF00BFDBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DB6ABC41BD5DABF00BFDBCB /* PBXTargetDependency */,
+			);
+			name = TSDMClientUITests;
+			productName = TSDMClientUITests;
+			productReference = 2DB6ABBE1BD5DABF00BFDBCB /* TSDMClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +271,14 @@
 				TargetAttributes = {
 					2D3A252F1BCB53D90017FE4A = {
 						CreatedOnToolsVersion = 7.0.1;
+					};
+					2DB6ABAF1BD5DAB500BFDBCB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2D3A252F1BCB53D90017FE4A;
+					};
+					2DB6ABBD1BD5DABF00BFDBCB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2D3A252F1BCB53D90017FE4A;
 					};
 				};
 			};
@@ -115,6 +296,8 @@
 			projectRoot = "";
 			targets = (
 				2D3A252F1BCB53D90017FE4A /* TSDMClient */,
+				2DB6ABAF1BD5DAB500BFDBCB /* TSDMClientTests */,
+				2DB6ABBD1BD5DABF00BFDBCB /* TSDMClientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,9 +307,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF78B931BCB91A8006A5A4B /* UserDefault.xcassets in Resources */,
 				2D3A25411BCB53D90017FE4A /* LaunchScreen.storyboard in Resources */,
 				2D3A253E1BCB53D90017FE4A /* Assets.xcassets in Resources */,
+				2DF78B951BCBBE86006A5A4B /* AppMenuIcon.xcassets in Resources */,
 				2D3A25391BCB53D90017FE4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABAE1BD5DAB500BFDBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABBC1BD5DABF00BFDBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +336,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */,
+				2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */,
 				2D3A25361BCB53D90017FE4A /* ViewController.swift in Sources */,
+				2DB6ABEA1BD6445100BFDBCB /* KRNetworkDataManager.swift in Sources */,
+				2DB6ABC91BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift in Sources */,
 				2D3A25341BCB53D90017FE4A /* AppDelegate.swift in Sources */,
 				2D3A253C1BCB53D90017FE4A /* TSDMClient.xcdatamodeld in Sources */,
+				2DB6ABED1BD64A8700BFDBCB /* KRAreaListView.swift in Sources */,
+				2D3A25531BCB57CF0017FE4A /* KRHomeViewController.swift in Sources */,
+				2D3A25501BCB57AE0017FE4A /* KRMenuViewController.swift in Sources */,
+				2D3A254E1BCB56560017FE4A /* ICSDropShadowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABAC1BD5DAB500BFDBCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB6ABB31BD5DAB500BFDBCB /* TSDMClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB6ABBA1BD5DABF00BFDBCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB6ABC11BD5DABF00BFDBCB /* TSDMClientUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DB6ABB61BD5DAB500BFDBCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D3A252F1BCB53D90017FE4A /* TSDMClient */;
+			targetProxy = 2DB6ABB51BD5DAB500BFDBCB /* PBXContainerItemProxy */;
+		};
+		2DB6ABC41BD5DABF00BFDBCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D3A252F1BCB53D90017FE4A /* TSDMClient */;
+			targetProxy = 2DB6ABC31BD5DABF00BFDBCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D3A25371BCB53D90017FE4A /* Main.storyboard */ = {
@@ -255,6 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsdm.TSDMClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$[PRODUCT_NAME]/$[PRODUCT_NAME]-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -267,6 +504,55 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsdm.TSDMClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$[PRODUCT_NAME]/$[PRODUCT_NAME]-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2DB6ABB71BD5DAB500BFDBCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TSDMClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirin.TSDMClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSDMClient.app/TSDMClient";
+			};
+			name = Debug;
+		};
+		2DB6ABB81BD5DAB500BFDBCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TSDMClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirin.TSDMClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSDMClient.app/TSDMClient";
+			};
+			name = Release;
+		};
+		2DB6ABC61BD5DABF00BFDBCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TSDMClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirin.TSDMClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TSDMClient;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2DB6ABC71BD5DABF00BFDBCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TSDMClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kirin.TSDMClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TSDMClient;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -289,6 +575,25 @@
 				2D3A25471BCB53D90017FE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DB6ABB91BD5DAB500BFDBCB /* Build configuration list for PBXNativeTarget "TSDMClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB6ABB71BD5DAB500BFDBCB /* Debug */,
+				2DB6ABB81BD5DAB500BFDBCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DB6ABC51BD5DABF00BFDBCB /* Build configuration list for PBXNativeTarget "TSDMClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB6ABC61BD5DABF00BFDBCB /* Debug */,
+				2DB6ABC71BD5DABF00BFDBCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
