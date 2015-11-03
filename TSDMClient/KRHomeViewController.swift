@@ -1,5 +1,6 @@
 //
 //  KRHomeViewController.swift
+//  主页控制器
 //  TSDMClient
 //
 //  Created by 王晶 on 15/10/12.
@@ -16,12 +17,17 @@ class KRHomeViewController: UIViewController, ICSDrawerControllerChild {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.orangeColor()
+        
+        // 导航栏分区选择
         let button = UIButton(type: .System)
         button.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         button.setTitle("TSDM", forState: .Normal)
         button.addTarget(self, action: "testAction:", forControlEvents: .TouchUpInside)
         navigationItem.titleView = button
+        
+        // 
+        view = KRForumListView(frame: view.frame)
+        view.backgroundColor = UIColor.orangeColor()
         
 //        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
 //        button.backgroundColor = UIColor.grayColor()
@@ -41,7 +47,7 @@ class KRHomeViewController: UIViewController, ICSDrawerControllerChild {
         
         addMenuGestureRecognizer()// 添加功能列表手势功能
     }
-    
+    let areaListView = KRAreaListView()
 
     /*
     // MARK: - Navigation
@@ -57,18 +63,22 @@ class KRHomeViewController: UIViewController, ICSDrawerControllerChild {
 extension KRHomeViewController {
     func testAction(sender: UIButton) {
         // add AreaListView
-        let areaListView = KRAreaListView()
+        
         areaListView.delegate = self
         navigationController?.view.insertSubview(areaListView, aboveSubview: navigationController!.navigationBar)
         removeMenuGestureRecognizer()
+        areaListView.showView()
     }
 }
 
 //MARK: KRAreaListViewDelegate
 extension KRHomeViewController: KRAreaListViewDelegate {
     func areaListViewWillCancel(areaListView: KRAreaListView, isCancel: Bool) {
-        let checkTitle = areaListView.checkTitle
-        (navigationItem.titleView  as! UIButton).setTitle(checkTitle, forState: .Normal)
+        if !isCancel {
+            let checkItem = areaListView.checkItem!
+            (navigationItem.titleView  as! UIButton).setTitle(checkItem["title"], forState: .Normal)
+            (view as! KRForumListView).groupItemData = checkItem
+        }
         addMenuGestureRecognizer()
     }
 }

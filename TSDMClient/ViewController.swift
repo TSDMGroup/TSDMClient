@@ -43,6 +43,16 @@ class KRHomeNavigationController: UINavigationController, ICSDrawerControllerChi
     weak var drawer: ICSDrawerController?
 }
 
+extension KRHomeNavigationController: ICSDrawerControllerPresenting {
+    func drawerControllerWillOpen(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = false
+    }
+    
+    func drawerControllerDidClose(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = true
+    }
+}
+
 extension UIViewController {
     /**
     移除功能表手势

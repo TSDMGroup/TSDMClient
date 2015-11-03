@@ -1,5 +1,6 @@
 //
 //  NetworkRequest.swift
+//  APP网络请求类
 //  TSDMClient
 //
 //  Created by 王晶 on 15/10/20.
@@ -74,6 +75,7 @@ private extension KRNetworkRequest {
         let enc = CFStringConvertEncodingToNSStringEncoding(CFStringConvertIANACharSetNameToEncoding(textEncodeName))
         if enc != NSUTF8StringEncoding {
             if let content = String(data: data, encoding: enc) {
+                print(content)
                 if let resultData = content.dataUsingEncoding(NSUTF8StringEncoding) {
                     return resultData
                 }

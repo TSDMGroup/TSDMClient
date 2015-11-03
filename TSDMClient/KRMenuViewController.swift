@@ -1,5 +1,6 @@
 //
 //  KRMenuViewController.swift
+//  侧边功能控制器
 //  TSDMClient
 //
 //  Created by 王晶 on 15/10/12.
@@ -153,6 +154,26 @@ extension KRMenuViewController: UITableViewDelegate {
         }
     }
 }
+
+extension KRMenuViewController: ICSDrawerControllerPresenting {
+    func drawerControllerWillOpen(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = false
+    }
+    
+    func drawerControllerDidOpen(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = true
+    }
+    
+    func drawerControllerWillClose(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = false
+    }
+    
+    func drawerControllerDidClose(drawerController: ICSDrawerController!) {
+        view.userInteractionEnabled = true
+    }
+}
+
+//MARK: UserInfoView
 
 /**
 user info type

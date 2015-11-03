@@ -1,5 +1,6 @@
 //
 //  KRNetworkDataManager.swift
+//  功能数据网络请求
 //  TSDMClient
 //
 //  Created by 王晶 on 15/10/20.
@@ -16,10 +17,22 @@ class KRRequestDataManager {
     /// 分区数据
     func areaList(success: (data: AnyObject)->(), failure: ()->()) {
         let urlString =  interfaceList.areaList
-        requestEngine.requestData(urlString, success: { (data) -> () in
-             let json = self.synJSONFromData(data)
+        requestDataOfInterface(urlString, success: success, failure: failure)
+    }
+    /// 版块列表数据
+    func forumList(groupID: String, success: (AnyObject) -> (), failure: () -> ()) {
+        let urlString = interfaceList.getForumList(groupID)
+        requestDataOfInterface(urlString, success: success, failure: failure)
+    }
+}
+
+private extension KRRequestDataManager {
+    /// 请求接口数据
+    func requestDataOfInterface(api: String, success: (AnyObject) -> (), failure: () -> ()) {
+        requestEngine.requestData(api, success: { (data) -> () in
+            let json = self.synJSONFromData(data)
             if json != nil {
-                success(data: json!)
+                success(json!)
                 return
             }
             failure()
@@ -42,6 +55,7 @@ private extension KRRequestDataManager {
             let json = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves)
             return json
         } catch {
+            print((error as NSError).description)
             return nil
         }
     }

@@ -395,7 +395,6 @@ typedef NS_ENUM(NSUInteger, ICSDrawerControllerState)
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          self.centerView.frame = centerViewFinalFrame;
-                         NSLog(@"%g, %g, %g, %g", centerViewFinalFrame.origin.x, centerViewFinalFrame.origin.y, centerViewFinalFrame.size.width, centerViewFinalFrame.size.height);
                          if (self.isFollowMove) {
                              self.leftView.frame = leftViewFinalFrame;
                          }

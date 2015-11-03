@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0DA0D21BD89CA700CD6C37 /* KRForumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0DA0D11BD89CA700CD6C37 /* KRForumListView.swift */; };
+		2D161EE81BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EE61BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift */; };
+		2D161EE91BD77EBE00E7E584 /* KRBasicJSONMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EE71BD77EBE00E7E584 /* KRBasicJSONMO.swift */; };
+		2D161EEB1BD788F600E7E584 /* KRCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */; };
 		2D3A25341BCB53D90017FE4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25331BCB53D90017FE4A /* AppDelegate.swift */; };
 		2D3A25361BCB53D90017FE4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25351BCB53D90017FE4A /* ViewController.swift */; };
 		2D3A25391BCB53D90017FE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A25371BCB53D90017FE4A /* Main.storyboard */; };
 		2D3A253C1BCB53D90017FE4A /* TSDMClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A253A1BCB53D90017FE4A /* TSDMClient.xcdatamodeld */; };
 		2D3A253E1BCB53D90017FE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A253D1BCB53D90017FE4A /* Assets.xcassets */; };
 		2D3A25411BCB53D90017FE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A253F1BCB53D90017FE4A /* LaunchScreen.storyboard */; };
-		2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254A1BCB56560017FE4A /* ICSDrawerController.m */; settings = {ASSET_TAGS = (); }; };
-		2D3A254E1BCB56560017FE4A /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254C1BCB56560017FE4A /* ICSDropShadowView.m */; settings = {ASSET_TAGS = (); }; };
-		2D3A25501BCB57AE0017FE4A /* KRMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2D3A25531BCB57CF0017FE4A /* KRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254A1BCB56560017FE4A /* ICSDrawerController.m */; };
+		2D3A254E1BCB56560017FE4A /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254C1BCB56560017FE4A /* ICSDropShadowView.m */; };
+		2D3A25501BCB57AE0017FE4A /* KRMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */; };
+		2D3A25531BCB57CF0017FE4A /* KRHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */; };
 		2DB6ABB31BD5DAB500BFDBCB /* TSDMClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABB21BD5DAB500BFDBCB /* TSDMClientTests.swift */; };
 		2DB6ABC11BD5DABF00BFDBCB /* TSDMClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABC01BD5DABF00BFDBCB /* TSDMClientUITests.swift */; };
-		2DB6ABC91BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABC81BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift */; settings = {ASSET_TAGS = (); }; };
-		2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE71BD63D4A00BFDBCB /* KRInterfaceManager.swift */; settings = {ASSET_TAGS = (); }; };
-		2DB6ABEA1BD6445100BFDBCB /* KRNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE91BD6445100BFDBCB /* KRNetworkDataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		2DB6ABED1BD64A8700BFDBCB /* KRAreaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */; settings = {ASSET_TAGS = (); }; };
-		2DF78B931BCB91A8006A5A4B /* UserDefault.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */; settings = {ASSET_TAGS = (); }; };
-		2DF78B951BCBBE86006A5A4B /* AppMenuIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */; settings = {ASSET_TAGS = (); }; };
+		2DB6ABC91BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABC81BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift */; };
+		2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE71BD63D4A00BFDBCB /* KRInterfaceManager.swift */; };
+		2DB6ABEA1BD6445100BFDBCB /* KRNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABE91BD6445100BFDBCB /* KRNetworkDataManager.swift */; };
+		2DB6ABED1BD64A8700BFDBCB /* KRAreaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */; };
+		2DF78B931BCB91A8006A5A4B /* UserDefault.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */; };
+		2DF78B951BCBBE86006A5A4B /* AppMenuIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D0DA0D11BD89CA700CD6C37 /* KRForumListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRForumListView.swift; sourceTree = "<group>"; };
+		2D161EE61BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KRBasicJSONMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D161EE71BD77EBE00E7E584 /* KRBasicJSONMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRBasicJSONMO.swift; sourceTree = "<group>"; };
+		2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRCoreDataManager.swift; sourceTree = "<group>"; };
 		2D3A25301BCB53D90017FE4A /* TSDMClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSDMClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A25331BCB53D90017FE4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3A25351BCB53D90017FE4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D161EE11BD77DC500E7E584 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2D161EE61BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift */,
+				2D161EE71BD77EBE00E7E584 /* KRBasicJSONMO.swift */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
 		2D3A25271BCB53D90017FE4A = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +142,12 @@
 			children = (
 				2D3A25331BCB53D90017FE4A /* AppDelegate.swift */,
 				2D3A25351BCB53D90017FE4A /* ViewController.swift */,
+				2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */,
 				2DB6ABEB1BD644E900BFDBCB /* NwetworkManager */,
 				2D3A25651BCB6DAC0017FE4A /* Hone */,
 				2D3A25371BCB53D90017FE4A /* Main.storyboard */,
 				2D3A25631BCB6D0C0017FE4A /* Classes Library */,
+				2D161EE11BD77DC500E7E584 /* ManagedObjects */,
 				2D3A253D1BCB53D90017FE4A /* Assets.xcassets */,
 				2DF78B941BCBBE86006A5A4B /* AppMenuIcon.xcassets */,
 				2DF78B921BCB91A8006A5A4B /* UserDefault.xcassets */,
@@ -172,6 +191,7 @@
 				2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */,
 				2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */,
 				2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */,
+				2D0DA0D11BD89CA700CD6C37 /* KRForumListView.swift */,
 			);
 			name = Hone;
 			sourceTree = "<group>";
@@ -271,6 +291,7 @@
 				TargetAttributes = {
 					2D3A252F1BCB53D90017FE4A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 56LR9Q458G;
 					};
 					2DB6ABAF1BD5DAB500BFDBCB = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -337,7 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */,
+				2D161EEB1BD788F600E7E584 /* KRCoreDataManager.swift in Sources */,
+				2D161EE81BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift in Sources */,
 				2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */,
+				2D0DA0D21BD89CA700CD6C37 /* KRForumListView.swift in Sources */,
 				2D3A25361BCB53D90017FE4A /* ViewController.swift in Sources */,
 				2DB6ABEA1BD6445100BFDBCB /* KRNetworkDataManager.swift in Sources */,
 				2DB6ABC91BD5DCEA00BFDBCB /* KRNetworkRequesManagert.swift in Sources */,
@@ -346,6 +370,7 @@
 				2DB6ABED1BD64A8700BFDBCB /* KRAreaListView.swift in Sources */,
 				2D3A25531BCB57CF0017FE4A /* KRHomeViewController.swift in Sources */,
 				2D3A25501BCB57AE0017FE4A /* KRMenuViewController.swift in Sources */,
+				2D161EE91BD77EBE00E7E584 /* KRBasicJSONMO.swift in Sources */,
 				2D3A254E1BCB56560017FE4A /* ICSDropShadowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TSDMClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TSDMClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
