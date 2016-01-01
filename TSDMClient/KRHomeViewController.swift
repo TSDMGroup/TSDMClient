@@ -26,7 +26,10 @@ class KRHomeViewController: UIViewController, ICSDrawerControllerChild {
         navigationItem.titleView = button
         
         // 
-        view = KRForumListView(frame: view.frame)
+        let forumListView = KRForumListView(frame: view.frame)
+        forumListView.delegate = self
+        view = forumListView
+        
         view.backgroundColor = UIColor.orangeColor()
         
 //        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
@@ -76,9 +79,18 @@ extension KRHomeViewController: KRAreaListViewDelegate {
     func areaListViewWillCancel(areaListView: KRAreaListView, isCancel: Bool) {
         if !isCancel {
             let checkItem = areaListView.checkItem!
-            (navigationItem.titleView  as! UIButton).setTitle(checkItem["title"], forState: .Normal)
+            (navigationItem.titleView  as! UIButton).setTitle(checkItem["title"] as? String, forState: .Normal)
             (view as! KRForumListView).groupItemData = checkItem
         }
         addMenuGestureRecognizer()
+    }
+}
+
+extension KRHomeViewController: KRForumListViewDelegate {
+    func enterForumThemes(para: [String : AnyObject]) {
+        let themesVC = KRThemeListViewController()
+        themesVC.themeKey = para
+        themesVC.view.backgroundColor = view.backgroundColor
+        navigationController?.pushViewController(themesVC, animated: true)
     }
 }

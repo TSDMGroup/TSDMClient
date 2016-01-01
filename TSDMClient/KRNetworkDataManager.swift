@@ -19,10 +19,21 @@ class KRRequestDataManager {
         let urlString =  interfaceList.areaList
         requestDataOfInterface(urlString, success: success, failure: failure)
     }
+    
     /// 版块列表数据
-    func forumList(groupID: String, success: (AnyObject) -> (), failure: () -> ()) {
+    func forumList(groupID: Int, success: (AnyObject) -> (), failure: () -> ()) {
         let urlString = interfaceList.getForumList(groupID)
         requestDataOfInterface(urlString, success: success, failure: failure)
+    }
+    
+    /// 版块主题列表请求
+    func themeList(para: (fid: Int, indexPage: Int), success: () -> (), failure: (errorID: Int) -> ()) {
+        let url = interfaceList.getThemeList(para.fid, indexPage: para.indexPage)
+        requestDataOfInterface(url, success: { (AnyObject) -> () in
+            print(AnyObject)
+            }) { () -> () in
+                print("error")
+        }
     }
 }
 

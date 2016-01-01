@@ -11,6 +11,7 @@
 		2D161EE81BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EE61BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift */; };
 		2D161EE91BD77EBE00E7E584 /* KRBasicJSONMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EE71BD77EBE00E7E584 /* KRBasicJSONMO.swift */; };
 		2D161EEB1BD788F600E7E584 /* KRCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */; };
+		2D387D9D1C36781700FB26F2 /* KRThemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D387D9C1C36781700FB26F2 /* KRThemeListViewController.swift */; };
 		2D3A25341BCB53D90017FE4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25331BCB53D90017FE4A /* AppDelegate.swift */; };
 		2D3A25361BCB53D90017FE4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A25351BCB53D90017FE4A /* ViewController.swift */; };
 		2D3A25391BCB53D90017FE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A25371BCB53D90017FE4A /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		2D161EE61BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KRBasicJSONMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2D161EE71BD77EBE00E7E584 /* KRBasicJSONMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRBasicJSONMO.swift; sourceTree = "<group>"; };
 		2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRCoreDataManager.swift; sourceTree = "<group>"; };
+		2D387D9C1C36781700FB26F2 /* KRThemeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRThemeListViewController.swift; sourceTree = "<group>"; };
 		2D3A25301BCB53D90017FE4A /* TSDMClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSDMClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A25331BCB53D90017FE4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D3A25351BCB53D90017FE4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			name = ManagedObjects;
 			sourceTree = "<group>";
 		};
+		2D27820E1BE86E020011FFB8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		2D3A25271BCB53D90017FE4A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 				2D161EEA1BD788F600E7E584 /* KRCoreDataManager.swift */,
 				2DB6ABEB1BD644E900BFDBCB /* NwetworkManager */,
 				2D3A25651BCB6DAC0017FE4A /* Hone */,
+				2D27820E1BE86E020011FFB8 /* Menu */,
 				2D3A25371BCB53D90017FE4A /* Main.storyboard */,
 				2D3A25631BCB6D0C0017FE4A /* Classes Library */,
 				2D161EE11BD77DC500E7E584 /* ManagedObjects */,
@@ -189,9 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				2D3A25521BCB57CF0017FE4A /* KRHomeViewController.swift */,
-				2D3A254F1BCB57AE0017FE4A /* KRMenuViewController.swift */,
 				2DB6ABEC1BD64A8700BFDBCB /* KRAreaListView.swift */,
 				2D0DA0D11BD89CA700CD6C37 /* KRForumListView.swift */,
+				2D387D9C1C36781700FB26F2 /* KRThemeListViewController.swift */,
 			);
 			name = Hone;
 			sourceTree = "<group>";
@@ -358,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3A254D1BCB56560017FE4A /* ICSDrawerController.m in Sources */,
+				2D387D9D1C36781700FB26F2 /* KRThemeListViewController.swift in Sources */,
 				2D161EEB1BD788F600E7E584 /* KRCoreDataManager.swift in Sources */,
 				2D161EE81BD77EBE00E7E584 /* KRBasicJSONMO+CoreDataProperties.swift in Sources */,
 				2DB6ABE81BD63D4A00BFDBCB /* KRInterfaceManager.swift in Sources */,

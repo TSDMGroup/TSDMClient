@@ -39,23 +39,25 @@ class KRNetworkRequest {
         
         let request = NSURLRequest(URL: url)
         let task = shareSession.dataTaskWithRequest(request) { (data, response, error) -> Void in
-            if error != nil {
-                failure(error: .RequestError)// 网络请求失败
-                return
-            }
-            if data == nil {
-                failure(error: .NotDara)// 无数据
-                return
-            }
-            
-            // 编码控制
-            var textEncodeName = ""
-            if response != nil && response!.textEncodingName != nil {
-                textEncodeName = response!.textEncodingName!
-            }
-            
-            let result = self.dataEncodeManager(data!, textEncodeName: textEncodeName)
-            success(data: result)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error != nil {
+                    failure(error: .RequestError)// 网络请求失败
+                    return
+                }
+                if data == nil {
+                    failure(error: .NotDara)// 无数据
+                    return
+                }
+                
+                // 编码控制
+                var textEncodeName = ""
+                if response != nil && response!.textEncodingName != nil {
+                    textEncodeName = response!.textEncodingName!
+                }
+                
+                let result = self.dataEncodeManager(data!, textEncodeName: textEncodeName)
+                success(data: result)
+            })
         }
         task.resume()
     }

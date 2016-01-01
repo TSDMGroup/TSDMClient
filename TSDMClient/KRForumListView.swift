@@ -8,11 +8,23 @@
 //
 
 import Foundation
+/**
+ 版块视图列表
+ */
+protocol KRForumListViewDelegate: NSObjectProtocol {
+    // 查看版块主题
+    func enterForumThemes(para: [String: AnyObject])
+}
+
 //MARK: View
 /// 版块列表
 class KRForumListView: UIView {
     
     private var listView: UITableView!
+    
+    weak var delegate: KRForumListViewDelegate?
+    
+    
     override var frame: CGRect {
         didSet {
             if listView != nil {
@@ -21,7 +33,7 @@ class KRForumListView: UIView {
         }
     }
     /// 分区标记
-    var groupItemData: Dictionary<String, String>? {
+    var groupItemData: Dictionary<String, AnyObject>? {
         didSet {
             updateData()
         }
@@ -52,6 +64,7 @@ private extension KRForumListView {
     func buildListView() {
         listView = UITableView(frame: bounds, style: .Plain)
         listView.dataSource = self
+        listView.delegate = self
         listView.registerClass(KRForumListViewCell.self, forCellReuseIdentifier: KRForumListViewCellIdentifier)
         addSubview(listView)
         
@@ -67,7 +80,7 @@ private extension KRForumListView {
         }
         
         if groupItemData == nil { return }
-        dataManager!.requestDataOfNetwork(groupItemData!["gid"]!)
+        dataManager!.requestDataOfNetwork((groupItemData!["gid"] as! NSNumber).integerValue)
     }
 }
 
@@ -86,9 +99,20 @@ extension KRForumListView: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
+extension KRForumListView: UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("点击\(indexPath.row)")
+        let itemData = listData[indexPath.row]
+        let fid  = itemData["fid"] as! NSNumber
+        let title = itemData["title"] as! String
+        delegate?.enterForumThemes(["fid": fid, "title": title])
+    }
+}
+
 //MARK: KRForumListDataDelegate
 extension KRForumListView: KRForumListDataDelegate {
-    func forumListDara(groupID: String, data: KRNetworkDataItemT?) {
+    func forumListDara(groupID: Int, data: KRNetworkDataItemT?) {
         if data != nil {
             listData = data!
         }
@@ -158,15 +182,14 @@ typealias KRForumListDataT = Array<Dictionary<String, String>>
 
 protocol KRForumListDataDelegate: NSObjectProtocol {
     /// 网络动态请求
-    func forumListDara(groupID: String, data: KRNetworkDataItemT?)
+    func forumListDara(groupID: Int, data: KRNetworkDataItemT?)
 }
 
 class KRForumListData: KRNetworkDataBasis {
-    private let networkManager = KRRequestDataManager()
      weak var delegate: KRForumListDataDelegate?
     
     // 网络请求
-    func requestDataOfNetwork(groupID: String) {
+    func requestDataOfNetwork(groupID: Int) {
         weak var tempSelf = self
         networkManager.forumList(groupID, success: { (data) -> () in
             if tempSelf == nil { return }
@@ -190,6 +213,9 @@ typealias KRNetworkDataT = Dictionary<String, AnyObject>
 typealias KRNetworkDataItemT = Array<Dictionary<String, AnyObject>>
 /// 网络请求数据基类
 class KRNetworkDataBasis {
+    
+    lazy var networkManager = KRRequestDataManager()
+    
     /// 解析请求数据
     func dealRequestData(data: KRNetworkDataT, dataKey: String) -> (Bool, KRNetworkDataItemT?) {
         let statusID = (data["status"] as! NSNumber).boolValue

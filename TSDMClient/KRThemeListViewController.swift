@@ -9,11 +9,17 @@
 import UIKit
 
 class KRThemeListViewController: UIViewController {
-
+    
+    var themeKey: [String: AnyObject] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        title = themeKey["title"] as? String
+        
+        KRThemeListData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +38,18 @@ class KRThemeListViewController: UIViewController {
     }
     */
 
+}
+
+class KRThemeListData: KRNetworkDataBasis {
+    
+    // 网络请求
+    func requestDataOfNetwork(forumID: Int, completion: ()->(), failure: ()->()) {
+        networkManager.themeList((forumID, 1), success: { () -> () in
+            
+            }) { (errorID) -> () in
+                
+        }
+    }
+    
+    // 解析数据
 }

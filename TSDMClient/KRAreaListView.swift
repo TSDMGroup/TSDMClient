@@ -29,7 +29,7 @@ class KRAreaListView: UIView {
     weak var delegate: KRAreaListViewDelegate?
     
     
-    var checkItem: Dictionary<String, String>?
+    var checkItem: Dictionary<String, AnyObject>?
     
     /// 分区数据
     private var areaData: KRAreaListData = [] {
@@ -149,7 +149,7 @@ extension KRAreaListView: UITableViewDataSource {
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier)!
-        cell.textLabel?.text = areaData[indexPath.row]["title"]
+        cell.textLabel?.text = areaData[indexPath.row]["title"] as? String
         return cell
     }
 }
@@ -184,7 +184,7 @@ protocol KRAreaListDataManagerDelegate: NSObjectProtocol {
 //MARK: - Data
 
 /// 分区版块列表数据类型
-typealias KRAreaListData = Array<Dictionary<String, String>>
+typealias KRAreaListData = Array<Dictionary<String, AnyObject>>
 /// 分区版块数据管理
 class KRAreaListDataManager {
     /// 数据动态状态代理
@@ -244,8 +244,8 @@ private extension KRAreaListDataManager {
     
     /// 解析请求数据
     func dealRequestData(data: Dictionary<String, AnyObject>) {
-        let statusID = data["status"] as! String
-        if statusID == "0" {
+        let statusID = data["status"] as! NSNumber
+        if !statusID.boolValue {
             areaListdata = data["group"] as! KRAreaListData
         } else {
             print("status != 0")

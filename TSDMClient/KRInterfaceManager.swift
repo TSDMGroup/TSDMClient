@@ -21,9 +21,28 @@ extension KRInterfaceList {
     var areaList: String {
         return synFullPath("forum.php?")
     }
-    /// 版块列表接口
-    func getForumList(froupID: String) -> String {
+    
+    /**
+    版块列表接口
+    
+    - parameter froupID: 分区ID
+    
+    - returns: API
+    */
+    func getForumList(froupID: Int) -> String {
         return synFullPath("forum.php?gid=\(froupID)")
+    }
+    
+    /**
+     主题列表
+     
+     - parameter forumID:   版块ID
+     - parameter indexPage: 页面位置
+     
+     - returns: API
+     */
+    func getThemeList(forumID: Int, indexPage: Int) -> String {
+        return synFullPath("forum.php?mod=forumdisplay&fid=\(forumID)&page=\(indexPage)")
     }
 }
 
